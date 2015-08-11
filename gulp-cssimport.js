@@ -36,10 +36,10 @@ module.exports = function cssImport(options) {
 			return x.trim();
 		});
 	}
-	
+
 	var stream;
 	var cssCount = 0;
-	
+
 	function fileContents(data, encoding, callback) {
 		if (!stream) {
 			stream = this;
@@ -123,7 +123,7 @@ module.exports = function cssImport(options) {
 				} else {
 					nextChunk = Chunk.create({
 						contents: contents,
-						directory: state.directory
+//						directory: state.directory
 					});
 				}
 				//console.log("state", state);
